@@ -8,5 +8,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 require('./app/Controllers/index')(app);
 
-
-app.listen(8080);
+var porta = process.env.PORT || 8080;
+app.listen(porta);
